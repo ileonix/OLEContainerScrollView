@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DCF8922253FD86A00DD2E39 /* OLEContainerScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCF8918253FD86A00DD2E39 /* OLEContainerScrollView.framework */; };
+		5DCF8927253FD86A00DD2E39 /* OLEContainerScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8926253FD86A00DD2E39 /* OLEContainerScrollViewTests.swift */; };
+		5DCF8929253FD86A00DD2E39 /* OLEContainerScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCF891B253FD86A00DD2E39 /* OLEContainerScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DCF8939253FD89000DD2E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8938253FD89000DD2E39 /* AppDelegate.swift */; };
+		5DCF893B253FD89000DD2E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF893A253FD89000DD2E39 /* SceneDelegate.swift */; };
+		5DCF893D253FD89000DD2E39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF893C253FD89000DD2E39 /* ViewController.swift */; };
+		5DCF8940253FD89000DD2E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF893E253FD89000DD2E39 /* Main.storyboard */; };
+		5DCF8942253FD89200DD2E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF8941253FD89200DD2E39 /* Assets.xcassets */; };
+		5DCF8945253FD89200DD2E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF8943253FD89200DD2E39 /* LaunchScreen.storyboard */; };
+		5DCF8950253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF894F253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.swift */; };
+		5DCF895B253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF895A253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.swift */; };
+		5DCF896A253FD92400DD2E39 /* OLEContainerScrollViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8966253FD92400DD2E39 /* OLEContainerScrollViewContentView.swift */; };
+		5DCF896B253FD92400DD2E39 /* OLEContainerScrollViewSwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8967253FD92400DD2E39 /* OLEContainerScrollViewSwizzling.swift */; };
+		5DCF896C253FD92400DD2E39 /* OLEContainerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8968253FD92400DD2E39 /* OLEContainerScrollView.swift */; };
+		5DCF896D253FD92400DD2E39 /* OLESwizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8969253FD92400DD2E39 /* OLESwizzling.swift */; };
+		5DCF896F253FDA3800DD2E39 /* OLEContainerScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCF8918253FD86A00DD2E39 /* OLEContainerScrollView.framework */; };
+		5DCF8970253FDA3800DD2E39 /* OLEContainerScrollView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCF8918253FD86A00DD2E39 /* OLEContainerScrollView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DCF8977253FE20A00DD2E39 /* OLESimulatedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF8976253FE20A00DD2E39 /* OLESimulatedTableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DCF8923253FD86A00DD2E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCF890F253FD86A00DD2E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCF8917253FD86A00DD2E39;
+			remoteInfo = OLEContainerScrollView;
+		};
+		5DCF894C253FD89300DD2E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCF890F253FD86A00DD2E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCF8935253FD89000DD2E39;
+			remoteInfo = OLEContainerScrollViewDemo;
+		};
+		5DCF8957253FD89300DD2E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCF890F253FD86A00DD2E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCF8935253FD89000DD2E39;
+			remoteInfo = OLEContainerScrollViewDemo;
+		};
+		5DCF8971253FDA3800DD2E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCF890F253FD86A00DD2E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCF8917253FD86A00DD2E39;
+			remoteInfo = OLEContainerScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DCF8973253FDA3800DD2E39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DCF8970253FDA3800DD2E39 /* OLEContainerScrollView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5DCF8918253FD86A00DD2E39 /* OLEContainerScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OLEContainerScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF891B253FD86A00DD2E39 /* OLEContainerScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLEContainerScrollView.h; sourceTree = "<group>"; };
+		5DCF891C253FD86A00DD2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCF8921253FD86A00DD2E39 /* OLEContainerScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OLEContainerScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF8926253FD86A00DD2E39 /* OLEContainerScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLEContainerScrollViewTests.swift; sourceTree = "<group>"; };
+		5DCF8928253FD86A00DD2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCF8936253FD89000DD2E39 /* OLEContainerScrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OLEContainerScrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF8938253FD89000DD2E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DCF893A253FD89000DD2E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DCF893C253FD89000DD2E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DCF893F253FD89000DD2E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DCF8941253FD89200DD2E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DCF8944253FD89200DD2E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DCF8946253FD89200DD2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCF894B253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OLEContainerScrollViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF894F253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLEContainerScrollViewDemoTests.swift; sourceTree = "<group>"; };
+		5DCF8951253FD89300DD2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCF8956253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OLEContainerScrollViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCF895A253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLEContainerScrollViewDemoUITests.swift; sourceTree = "<group>"; };
+		5DCF895C253FD89300DD2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCF8966253FD92400DD2E39 /* OLEContainerScrollViewContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEContainerScrollViewContentView.swift; sourceTree = "<group>"; };
+		5DCF8967253FD92400DD2E39 /* OLEContainerScrollViewSwizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEContainerScrollViewSwizzling.swift; sourceTree = "<group>"; };
+		5DCF8968253FD92400DD2E39 /* OLEContainerScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLEContainerScrollView.swift; sourceTree = "<group>"; };
+		5DCF8969253FD92400DD2E39 /* OLESwizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLESwizzling.swift; sourceTree = "<group>"; };
+		5DCF8976253FE20A00DD2E39 /* OLESimulatedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLESimulatedTableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DCF8915253FD86A00DD2E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF891E253FD86A00DD2E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF8922253FD86A00DD2E39 /* OLEContainerScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8933253FD89000DD2E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF896F253FDA3800DD2E39 /* OLEContainerScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8948253FD89300DD2E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8953253FD89300DD2E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DCF890E253FD86A00DD2E39 = {
+			isa = PBXGroup;
+			children = (
+				5DCF891A253FD86A00DD2E39 /* OLEContainerScrollView */,
+				5DCF8925253FD86A00DD2E39 /* OLEContainerScrollViewTests */,
+				5DCF8937253FD89000DD2E39 /* OLEContainerScrollViewDemo */,
+				5DCF894E253FD89300DD2E39 /* OLEContainerScrollViewDemoTests */,
+				5DCF8959253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests */,
+				5DCF8919253FD86A00DD2E39 /* Products */,
+				5DCF896E253FDA3800DD2E39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DCF8919253FD86A00DD2E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF8918253FD86A00DD2E39 /* OLEContainerScrollView.framework */,
+				5DCF8921253FD86A00DD2E39 /* OLEContainerScrollViewTests.xctest */,
+				5DCF8936253FD89000DD2E39 /* OLEContainerScrollViewDemo.app */,
+				5DCF894B253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.xctest */,
+				5DCF8956253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DCF891A253FD86A00DD2E39 /* OLEContainerScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF8968253FD92400DD2E39 /* OLEContainerScrollView.swift */,
+				5DCF8966253FD92400DD2E39 /* OLEContainerScrollViewContentView.swift */,
+				5DCF8967253FD92400DD2E39 /* OLEContainerScrollViewSwizzling.swift */,
+				5DCF8969253FD92400DD2E39 /* OLESwizzling.swift */,
+				5DCF891B253FD86A00DD2E39 /* OLEContainerScrollView.h */,
+				5DCF891C253FD86A00DD2E39 /* Info.plist */,
+			);
+			path = OLEContainerScrollView;
+			sourceTree = "<group>";
+		};
+		5DCF8925253FD86A00DD2E39 /* OLEContainerScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF8926253FD86A00DD2E39 /* OLEContainerScrollViewTests.swift */,
+				5DCF8928253FD86A00DD2E39 /* Info.plist */,
+			);
+			path = OLEContainerScrollViewTests;
+			sourceTree = "<group>";
+		};
+		5DCF8937253FD89000DD2E39 /* OLEContainerScrollViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF8938253FD89000DD2E39 /* AppDelegate.swift */,
+				5DCF893A253FD89000DD2E39 /* SceneDelegate.swift */,
+				5DCF893C253FD89000DD2E39 /* ViewController.swift */,
+				5DCF893E253FD89000DD2E39 /* Main.storyboard */,
+				5DCF8941253FD89200DD2E39 /* Assets.xcassets */,
+				5DCF8943253FD89200DD2E39 /* LaunchScreen.storyboard */,
+				5DCF8946253FD89200DD2E39 /* Info.plist */,
+				5DCF8976253FE20A00DD2E39 /* OLESimulatedTableView.swift */,
+			);
+			path = OLEContainerScrollViewDemo;
+			sourceTree = "<group>";
+		};
+		5DCF894E253FD89300DD2E39 /* OLEContainerScrollViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF894F253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.swift */,
+				5DCF8951253FD89300DD2E39 /* Info.plist */,
+			);
+			path = OLEContainerScrollViewDemoTests;
+			sourceTree = "<group>";
+		};
+		5DCF8959253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF895A253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.swift */,
+				5DCF895C253FD89300DD2E39 /* Info.plist */,
+			);
+			path = OLEContainerScrollViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		5DCF896E253FDA3800DD2E39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5DCF8913253FD86A00DD2E39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF8929253FD86A00DD2E39 /* OLEContainerScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DCF8917253FD86A00DD2E39 /* OLEContainerScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCF892C253FD86A00DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollView" */;
+			buildPhases = (
+				5DCF8913253FD86A00DD2E39 /* Headers */,
+				5DCF8914253FD86A00DD2E39 /* Sources */,
+				5DCF8915253FD86A00DD2E39 /* Frameworks */,
+				5DCF8916253FD86A00DD2E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OLEContainerScrollView;
+			productName = OLEContainerScrollView;
+			productReference = 5DCF8918253FD86A00DD2E39 /* OLEContainerScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DCF8920253FD86A00DD2E39 /* OLEContainerScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCF892F253FD86A00DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewTests" */;
+			buildPhases = (
+				5DCF891D253FD86A00DD2E39 /* Sources */,
+				5DCF891E253FD86A00DD2E39 /* Frameworks */,
+				5DCF891F253FD86A00DD2E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCF8924253FD86A00DD2E39 /* PBXTargetDependency */,
+			);
+			name = OLEContainerScrollViewTests;
+			productName = OLEContainerScrollViewTests;
+			productReference = 5DCF8921253FD86A00DD2E39 /* OLEContainerScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DCF8935253FD89000DD2E39 /* OLEContainerScrollViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCF895D253FD89300DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewDemo" */;
+			buildPhases = (
+				5DCF8932253FD89000DD2E39 /* Sources */,
+				5DCF8933253FD89000DD2E39 /* Frameworks */,
+				5DCF8934253FD89000DD2E39 /* Resources */,
+				5DCF8973253FDA3800DD2E39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCF8972253FDA3800DD2E39 /* PBXTargetDependency */,
+			);
+			name = OLEContainerScrollViewDemo;
+			productName = OLEContainerScrollViewDemo;
+			productReference = 5DCF8936253FD89000DD2E39 /* OLEContainerScrollViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DCF894A253FD89300DD2E39 /* OLEContainerScrollViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCF8960253FD89300DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewDemoTests" */;
+			buildPhases = (
+				5DCF8947253FD89300DD2E39 /* Sources */,
+				5DCF8948253FD89300DD2E39 /* Frameworks */,
+				5DCF8949253FD89300DD2E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCF894D253FD89300DD2E39 /* PBXTargetDependency */,
+			);
+			name = OLEContainerScrollViewDemoTests;
+			productName = OLEContainerScrollViewDemoTests;
+			productReference = 5DCF894B253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DCF8955253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCF8963253FD89300DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewDemoUITests" */;
+			buildPhases = (
+				5DCF8952253FD89300DD2E39 /* Sources */,
+				5DCF8953253FD89300DD2E39 /* Frameworks */,
+				5DCF8954253FD89300DD2E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCF8958253FD89300DD2E39 /* PBXTargetDependency */,
+			);
+			name = OLEContainerScrollViewDemoUITests;
+			productName = OLEContainerScrollViewDemoUITests;
+			productReference = 5DCF8956253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DCF890F253FD86A00DD2E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Chanon Purananunak";
+				TargetAttributes = {
+					5DCF8917253FD86A00DD2E39 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+					5DCF8920253FD86A00DD2E39 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					5DCF8935253FD89000DD2E39 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					5DCF894A253FD89300DD2E39 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 5DCF8935253FD89000DD2E39;
+					};
+					5DCF8955253FD89300DD2E39 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 5DCF8935253FD89000DD2E39;
+					};
+				};
+			};
+			buildConfigurationList = 5DCF8912253FD86A00DD2E39 /* Build configuration list for PBXProject "OLEContainerScrollView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DCF890E253FD86A00DD2E39;
+			productRefGroup = 5DCF8919253FD86A00DD2E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DCF8917253FD86A00DD2E39 /* OLEContainerScrollView */,
+				5DCF8920253FD86A00DD2E39 /* OLEContainerScrollViewTests */,
+				5DCF8935253FD89000DD2E39 /* OLEContainerScrollViewDemo */,
+				5DCF894A253FD89300DD2E39 /* OLEContainerScrollViewDemoTests */,
+				5DCF8955253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DCF8916253FD86A00DD2E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF891F253FD86A00DD2E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8934253FD89000DD2E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF8945253FD89200DD2E39 /* LaunchScreen.storyboard in Resources */,
+				5DCF8942253FD89200DD2E39 /* Assets.xcassets in Resources */,
+				5DCF8940253FD89000DD2E39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8949253FD89300DD2E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8954253FD89300DD2E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DCF8914253FD86A00DD2E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF896B253FD92400DD2E39 /* OLEContainerScrollViewSwizzling.swift in Sources */,
+				5DCF896A253FD92400DD2E39 /* OLEContainerScrollViewContentView.swift in Sources */,
+				5DCF896D253FD92400DD2E39 /* OLESwizzling.swift in Sources */,
+				5DCF896C253FD92400DD2E39 /* OLEContainerScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF891D253FD86A00DD2E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF8927253FD86A00DD2E39 /* OLEContainerScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8932253FD89000DD2E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF893D253FD89000DD2E39 /* ViewController.swift in Sources */,
+				5DCF8977253FE20A00DD2E39 /* OLESimulatedTableView.swift in Sources */,
+				5DCF8939253FD89000DD2E39 /* AppDelegate.swift in Sources */,
+				5DCF893B253FD89000DD2E39 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8947253FD89300DD2E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF8950253FD89300DD2E39 /* OLEContainerScrollViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCF8952253FD89300DD2E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCF895B253FD89300DD2E39 /* OLEContainerScrollViewDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DCF8924253FD86A00DD2E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCF8917253FD86A00DD2E39 /* OLEContainerScrollView */;
+			targetProxy = 5DCF8923253FD86A00DD2E39 /* PBXContainerItemProxy */;
+		};
+		5DCF894D253FD89300DD2E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCF8935253FD89000DD2E39 /* OLEContainerScrollViewDemo */;
+			targetProxy = 5DCF894C253FD89300DD2E39 /* PBXContainerItemProxy */;
+		};
+		5DCF8958253FD89300DD2E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCF8935253FD89000DD2E39 /* OLEContainerScrollViewDemo */;
+			targetProxy = 5DCF8957253FD89300DD2E39 /* PBXContainerItemProxy */;
+		};
+		5DCF8972253FDA3800DD2E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCF8917253FD86A00DD2E39 /* OLEContainerScrollView */;
+			targetProxy = 5DCF8971253FDA3800DD2E39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DCF893E253FD89000DD2E39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCF893F253FD89000DD2E39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DCF8943253FD89200DD2E39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCF8944253FD89200DD2E39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DCF892A253FD86A00DD2E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DCF892B253FD86A00DD2E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DCF892D253FD86A00DD2E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OLEContainerScrollView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DCF892E253FD86A00DD2E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OLEContainerScrollView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DCF8930253FD86A00DD2E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DCF8931253FD86A00DD2E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DCF895E253FD89300DD2E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DCF895F253FD89300DD2E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DCF8961253FD89300DD2E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OLEContainerScrollViewDemo.app/OLEContainerScrollViewDemo";
+			};
+			name = Debug;
+		};
+		5DCF8962253FD89300DD2E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OLEContainerScrollViewDemo.app/OLEContainerScrollViewDemo";
+			};
+			name = Release;
+		};
+		5DCF8964253FD89300DD2E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OLEContainerScrollViewDemo;
+			};
+			name = Debug;
+		};
+		5DCF8965253FD89300DD2E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FU7ZBF84W8;
+				INFOPLIST_FILE = OLEContainerScrollViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.bugaboo.BugabooTV.OLEContainerScrollViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OLEContainerScrollViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DCF8912253FD86A00DD2E39 /* Build configuration list for PBXProject "OLEContainerScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF892A253FD86A00DD2E39 /* Debug */,
+				5DCF892B253FD86A00DD2E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCF892C253FD86A00DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF892D253FD86A00DD2E39 /* Debug */,
+				5DCF892E253FD86A00DD2E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCF892F253FD86A00DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF8930253FD86A00DD2E39 /* Debug */,
+				5DCF8931253FD86A00DD2E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCF895D253FD89300DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF895E253FD89300DD2E39 /* Debug */,
+				5DCF895F253FD89300DD2E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCF8960253FD89300DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF8961253FD89300DD2E39 /* Debug */,
+				5DCF8962253FD89300DD2E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCF8963253FD89300DD2E39 /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCF8964253FD89300DD2E39 /* Debug */,
+				5DCF8965253FD89300DD2E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DCF890F253FD86A00DD2E39 /* Project object */;
+}
