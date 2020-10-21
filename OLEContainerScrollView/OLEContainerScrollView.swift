@@ -103,6 +103,7 @@ class OLEContainerScrollView: UIScrollView {
                 scrollView?.addObserver(self, forKeyPath: NSStringFromSelector(#selector(getter: NSCollectionLayoutContainer.contentSize)), options: .old, context: &KVOContext)
             } else {
                 // Fallback on earlier versions
+                
             }
         } else if (subview?.responds(to: #selector(getter: UIWebView.scrollView)))! {
             let scrollView = subview?.perform(#selector(getter: UIWebView.scrollView)) as? UIScrollView
@@ -111,6 +112,7 @@ class OLEContainerScrollView: UIScrollView {
                 scrollView?.addObserver(self, forKeyPath: NSStringFromSelector(#selector(getter: NSCollectionLayoutContainer.contentSize)), options: .old, context: &KVOContext)
             } else {
                 // Fallback on earlier versions
+                
             }
         } else {
             subview?.addObserver(self, forKeyPath: NSStringFromSelector(#selector(getter: frame)), options: .old, context: KVOContext)
@@ -172,6 +174,7 @@ class OLEContainerScrollView: UIScrollView {
                 }
             } else {
                 // Fallback on earlier versions
+                
             }
         } else {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
