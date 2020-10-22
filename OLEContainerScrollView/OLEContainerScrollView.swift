@@ -15,18 +15,27 @@ import CoreGraphics
 //protocol OLEContainerScrollViewScrollable: AnyObject {
 //    var scrollView: UIScrollView? { get }
 //}
-//
+
 //class UIScrollView: OLEContainerScrollViewScrollable {
-//    var scrollView: UIScrollView? = nil
+//    var scrollView: UIScrollView?
 //}
 
 class OLEContainerScrollView: UIScrollView {
     var contentView: UIView?
-    var spacing: CGFloat?
+    var spacing: CGFloat = 0.0
     var ignoreHiddenSubviews = false
     
     var subviewsInLayoutOrder: [AnyHashable]?
     var oleContainerScrollViewSwizzling: OLEContainerScrollViewSwizzling?
+    
+//    override init() {
+//        super.init()
+//        if self is OLEContainerScrollView {
+//            oleContainerScrollViewSwizzling?.swizzleUICollectionViewLayoutFinalizeCollectionViewUpdates()
+//            oleContainerScrollViewSwizzling?.swizzleUITableView()
+//        }
+//        commonInitForOLEContainerScrollView()
+//    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -261,7 +270,7 @@ class OLEContainerScrollView: UIScrollView {
             }
             
             if index < (subviewsInLayoutOrder!.count - 1) {
-                yOffsetOfCurrentSubview += spacing!
+                yOffsetOfCurrentSubview += spacing
             }
         }
         
