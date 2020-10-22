@@ -26,25 +26,19 @@ class OLESwizzling {
         assert(origMethod != nil, "Invalid parameter not satisfying: origMethod != nil")
 
         // convert block to IMP trampoline and replace method implementation
-        var newIMP: IMP = imp_implementationWithBlock(block)
+        var newIMP: IMP? = nil
         if let block = block {
             newIMP = imp_implementationWithBlock(block)
         }
 
         // Try adding the method if not yet in the current class
-    //    if let origMethod = origMethod, let newIMP = newIMP {
-    //        if !class_addMethod(c, origSEL, newIMP, method_getTypeEncoding(origMethod)) {
-    //            return method_setImplementation(origMethod, newIMP)
-    //        } else {
-    //            return method_getImplementation(origMethod)
-    //        }
-    //    }
-        
-        //Without null safety
-        if !class_addMethod(c, origSEL, newIMP, method_getTypeEncoding(origMethod!)) {
-            return method_setImplementation(origMethod!, newIMP)
-        } else {
-            return method_getImplementation(origMethod!)
-        }
+//        if let origMethod = origMethod, let newIMP = newIMP {
+        if !class_addMethod(c, origSEL, newIMP ?? imp_implementationWithBlock(block), method_getTypeEncoding(origMethod!)) {
+            return method_setImplementation(origMethod!, newIMP!)
+            } else {
+                return method_getImplementation(origMethod!)
+            }
+//        }
     }
 }
+
