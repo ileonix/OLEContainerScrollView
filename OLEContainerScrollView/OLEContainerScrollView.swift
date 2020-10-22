@@ -43,6 +43,7 @@ class OLEContainerScrollView: UIScrollView {
         // +initialize can be called multiple times if subclasses don't implement it.
         // Protect against multiple calls
         if self is OLEContainerScrollView {
+            oleContainerScrollViewSwizzling = OLEContainerScrollViewSwizzling.init()
             oleContainerScrollViewSwizzling?.swizzleUICollectionViewLayoutFinalizeCollectionViewUpdates()
             oleContainerScrollViewSwizzling?.swizzleUITableView()
         }
@@ -54,6 +55,7 @@ class OLEContainerScrollView: UIScrollView {
         // +initialize can be called multiple times if subclasses don't implement it.
         // Protect against multiple calls
         if self is OLEContainerScrollView {
+            oleContainerScrollViewSwizzling = OLEContainerScrollViewSwizzling.init(coder: coder)
             oleContainerScrollViewSwizzling?.swizzleUICollectionViewLayoutFinalizeCollectionViewUpdates()
             oleContainerScrollViewSwizzling?.swizzleUITableView()
         }
