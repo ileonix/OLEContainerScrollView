@@ -50,7 +50,15 @@ class OLEContainerScrollView: UIScrollView {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        // +initialize can be called multiple times if subclasses don't implement it.
+        // Protect against multiple calls
+        if self is OLEContainerScrollView {
+            oleContainerScrollViewSwizzling?.swizzleUICollectionViewLayoutFinalizeCollectionViewUpdates()
+            oleContainerScrollViewSwizzling?.swizzleUITableView()
+        }
+        commonInitForOLEContainerScrollView()
+//        fatalError("init(coder:) has not been implemented")
     }
     
     override func awakeFromNib() {
