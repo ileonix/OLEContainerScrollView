@@ -20,7 +20,9 @@ class OLEContainerScrollViewSwizzling: UICollectionViewLayout {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        self.oleswizzling = OLESwizzling.init()
+//        fatalError("init(coder:) has not been implemented")
     }
     
     func swizzleUICollectionViewLayoutFinalizeCollectionViewUpdates() {
