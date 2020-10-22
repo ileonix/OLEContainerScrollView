@@ -32,11 +32,15 @@ class OLESwizzling {
             if let block = block {
                 newIMP = imp_implementationWithBlock(block)
             }
+            
+            if newIMP == nil {
+                newIMP = imp_implementationWithBlock(block)
+            }
         }
 
         // Try adding the method if not yet in the current class
 //        if let origMethod = origMethod, let newIMP = newIMP {
-        if !class_addMethod(c, origSEL, newIMP ?? imp_implementationWithBlock(block), method_getTypeEncoding(origMethod!)) {
+        if !class_addMethod(c, origSEL, newIMP!, method_getTypeEncoding(origMethod!)) {
             return method_setImplementation(origMethod!, newIMP!)
             } else {
                 return method_getImplementation(origMethod!)
