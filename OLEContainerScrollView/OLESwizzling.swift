@@ -24,11 +24,14 @@ class OLESwizzling {
         // get original method
         let origMethod = class_getInstanceMethod(c, origSEL)
         assert(origMethod != nil, "Invalid parameter not satisfying: origMethod != nil")
-
+        
         // convert block to IMP trampoline and replace method implementation
         var newIMP: IMP? = nil
-        if let block = block {
-            newIMP = imp_implementationWithBlock(block)
+        
+        DispatchQueue.main.async {
+            if let block = block {
+                newIMP = imp_implementationWithBlock(block)
+            }
         }
 
         // Try adding the method if not yet in the current class
