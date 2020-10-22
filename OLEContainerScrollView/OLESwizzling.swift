@@ -26,7 +26,7 @@ class OLESwizzling {
         assert(origMethod != nil, "Invalid parameter not satisfying: origMethod != nil")
 
         // convert block to IMP trampoline and replace method implementation
-        var newIMP: IMP? = nil
+        var newIMP: IMP?// = nil
         if let block = block {
             newIMP = imp_implementationWithBlock(block)
         }
